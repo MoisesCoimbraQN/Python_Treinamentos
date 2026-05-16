@@ -1,7 +1,7 @@
 import random
  
 def adivinhar_numero():
-    numero_secreto = random.randint(1, 100)
+    numero_secreto = random.randint(1, 100) #metodo randint do módulo random da para gerar um número aleatório entre 1 e 100
     tentativas = 0
  
     while True:
@@ -9,7 +9,7 @@ def adivinhar_numero():
             palpite = int(input("Tente adivinhar o número (1-100): "))
  
             if not 1 <= palpite <= 100:
-                raise ValueError("Número fora do intervalo! Digite um número entre 1 e 100.")
+                raise ValueError("Número fora do intervalo! Digite um número entre 1 e 100.") #validação do intervalo do palpite
  
             
             
